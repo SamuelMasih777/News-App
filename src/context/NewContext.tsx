@@ -75,7 +75,7 @@ export const NewsProvider: React.FC<NewsProviderProps> = ({ children }) => {
           country: 'in',
           page,
           pageSize: 100,
-          apiKey: '37272b8edf7d4834a1fce6f0acbba1e2',
+          apiKey: process.env.REACT_APP_NEWS_API_KEY,
         },
       });
       const filteredArticles = response.data.articles.filter((article: Article) => (
