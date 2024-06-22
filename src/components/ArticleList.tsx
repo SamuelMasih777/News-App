@@ -73,7 +73,7 @@ const ArticleList: React.FC = () => {
                 className="w-full h-40 object-cover mb-2 rounded"
               />
               <h2 className="text-lg font-bold text-white">{article.title}</h2>
-              <p className="text-gray-600 text-gray-400">{article.description}</p>
+              <p className="text-gray-400">{article.description}</p>
             </Link>
           </div>
         ))}
