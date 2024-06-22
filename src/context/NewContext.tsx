@@ -78,6 +78,7 @@ export const NewsProvider: React.FC<NewsProviderProps> = ({ children }) => {
           apiKey: process.env.REACT_APP_NEWS_API_KEY,
         },
       });
+      
       const filteredArticles = response.data.articles.filter((article: Article) => (
         article.title !== null &&
         article.title !== '' &&
